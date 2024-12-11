@@ -1,0 +1,304 @@
+
+/* Mes Imports */
+
+@import "./variables.scss";
+
+/* Mixins */
+
+/* Mixins Yannick */
+
+
+@mixin lienhover{
+    text-decoration: underline;
+    color: white;
+    transform: scale(1.2);
+}
+
+@mixin lienmail($couleur, $padding: 5px, $radius: 5px){
+    background-color: $forest-green;
+    padding: $padding;
+    border-radius: $radius;
+}
+
+/* Mixins Romain */
+
+@mixin bordure($couleur, $largeur: 1px, $radius: 5px) {
+    border: $largeur solid $couleur;
+    border-radius: $radius;
+    }
+
+@mixin f-direction($direction){
+    display: flex;
+    flex-direction: $direction;
+}
+
+@mixin align-self($align){
+    display: flex;
+    align-self: $align;
+}
+
+/* Extend */
+
+%shadow-effect{
+    box-shadow: 5px 10px 25px -5px rgba(66, 68, 90, 1);
+}
+
+%text-shadow{
+    text-shadow: 5px 3px 4px $shadow-green;
+}
+
+%button{
+    @include bordure($forest-green, 3px, 10px);
+    @include align-self(center);
+    color: $forest-green;
+    background-color: $mountain-light-brown;
+}
+
+%article-flore-faune{
+    @include f-direction(column);
+    @include bordure($mountain-light-brown, 2px, 10px);
+    @extend %shadow-effect;
+    margin: 0px 10px;
+    padding: 10px;
+    text-align: center;
+    .title-article{
+        color: $forest-green;
+        @extend %text-shadow;
+        font-family: $font-title;
+    }
+
+    img{
+        height: 50px;
+        width: auto;
+    }
+
+    p{
+        text-decoration: solid;
+        color: $anthracite;
+        font-family: $font-text;
+        padding: 0px 10px;
+    }
+
+    button{
+        @extend %button;
+    }
+
+    button:hover{
+        color: $anthracite;
+        @include bordure($anthracite, 3px, 10px);
+        transform: scale(1.2);
+    }
+
+}
+
+%article-path{
+    @include f-direction(row);
+    @include bordure($mountain-light-brown, 2px, 10px);
+    @extend %shadow-effect;
+    margin: 10px 0px;
+    padding: 10px;
+    text-align: center;
+    div{
+        @include f-direction(column);
+        justify-content: space-between;
+
+        .title-article{
+            color: $forest-green;
+            @extend %text-shadow;
+            font-family: $font-title;
+        }
+
+        p{
+            text-decoration: solid;
+            color: $anthracite;
+            font-family: $font-text;
+            padding: 0px 10px;
+        }
+    
+        button{
+            @extend %button;
+        }
+
+        button:hover{
+            color: $anthracite;
+            @include bordure($anthracite, 3px, 10px);
+            transform: scale(1.2);
+        }
+    }
+
+    img{
+        width:400px;
+        height:auto;
+    }
+}
+
+
+
+/* Partition du Css Indenté */
+
+body{
+    margin: 0;
+    padding: 0;
+
+    header{
+        box-shadow: 0px 10px 10px $forest-green ;
+        
+        div{
+            /*border-bottom: solid $forest-green;*/
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    
+        input{
+            background-color: $mountain-light-brown;
+            border: solid $forest-green;
+            color: $text-color-white;
+            border-radius: $border-radius;
+            width: 150px;
+            height: 50px;
+        }
+        
+        #search-bar{
+            width: 200px;
+            height: 50px;
+            border: solid $forest-green;
+            background: #ffffff;
+            border-radius: $border-radius;
+        }
+    }
+
+    main{
+        width: 80%;
+        margin: auto;
+    
+        p{
+            color: $anthracite;
+            font-family: $font-text;
+            margin-bottom: 100px;
+        }
+        
+        .big-title{
+            font-size: 2em;
+            @extend %text-shadow;
+            font-family: $font-title;
+        }
+    
+        h2{
+            text-align: center;
+            color: $forest-green;
+            @extend %text-shadow;
+            font-family: $font-title;
+        }
+    
+        .meteo{
+            margin: 30px 0px;
+            margin-bottom: 100px;
+            @include align-self(center);
+            .box-meteo{
+                @extend %shadow-effect;
+                @include bordure(white, 2px, 10px);
+                margin: auto;
+            }
+        }
+    
+    
+        .list-article2{
+            @include f-direction(column);
+            justify-content: space-between;
+            padding: 10px;
+            margin: 30px 0px;
+            margin-bottom: 100px;
+    
+            .path{
+                margin: 10px 10px;
+                @extend %article-path;
+            }
+        }
+    
+    
+        .list-article{
+            margin-bottom: 100px;
+            @include f-direction(row);
+            .flore{
+                @include f-direction(column);
+                justify-content: space-evenly;
+                padding: 10px;
+                margin: 10px 10px;
+                @extend %article-flore-faune;
+            }
+        
+            .faune{
+                @include f-direction(column);
+                justify-content: space-evenly;
+                padding: 10px;
+                margin: 10px 10px;
+                @extend %article-flore-faune;
+            }
+        }
+    }
+    
+    footer{
+        background-image: linear-gradient(white, $mountain-light-brown);
+        display: flex;
+        flex-direction: row;
+        justify-content:space-evenly;
+        
+        div{
+            h3{
+                font-family: $font-title;
+                color: $forest-green;
+                @extend %text-shadow;
+            }
+
+            p{
+                font-family: $font-text;
+                color: $anthracite;
+            }
+
+            a{
+                margin-left: 50px;
+                color:black;
+                font-family: $font-text;
+                text-decoration: none;
+            }
+            a:hover{
+                @include lienhover;
+            }
+        }
+        div:first-child{
+            display: flex;
+            align-items: center;
+        }
+        div:nth-child(2){
+            width: 50%;
+            border-left: solid 2px $forest-green;
+            border-right: solid 2px $forest-green;
+            padding-left: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            a{
+                align-self: center;
+                @include lienmail($forest-green);
+            }
+        }
+    }
+}
+
+#truc{
+    display: flex;
+    flex-direction: column;
+}
+
+.menu_cache{
+    display: none;
+}
+
+.menu_affiche:hover + .menu_cache{
+    display: flex;
+    position: absolute;
+    top: 110px;
+    left: 110px;  
+}
+

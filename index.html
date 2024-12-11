@@ -1,0 +1,150 @@
+<DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tp Groupe Sass</title>
+        <link rel="stylesheet" href="./style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&family=Prosto+One&family=Sriracha&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div>
+                <img src="./Images/Logo-Parc-Pyrennees.png" width="150" alt="Logo-Parc-Pyrennees">
+                        <input type="button" value="se rendre au parc"class="menu_affiche"/>
+                        <div class="menu_cache">
+                            <ul id="se-rendre-au-parc">
+                                <li>En train
+                                    <li>Gares de Pau, Oloron, Tarbes, Lannemezan</li>
+                                    <li>Au départ de ces gares, les autocars desservent ces valées : se renseigner à la S.N.C.F. et dans les offices de tourisme.</li>
+                                </li>
+                                <li>En voiture
+                                    <li>Cartes routières</li>
+                                    <li>Michelin n°85IGN 1/100 000 n°70 Pau-bagnière de Luchon</li>
+                                </li>
+                                <li>En avion
+                                    <li>Aéroport international de Tarbes-Lourdes-Pyrénées</li>
+                                    <li>Tél.:05.62.32.92.22</li>
+                                    <li></li>
+                                    <li>Aéroport de Pau-Pyrénées</li>
+                                    <li>Tél.:05.59.33.33.00</li>
+                                </li>
+                            </ul>
+                        </div>
+                <input type="button" value="Météo"/>
+                <form class="example" action="#">
+                    <input type="search" name="search" placeholder="recherche" id="search-bar">
+                    <input type="button" value="Rechercher"/>
+                </form>
+            </div>
+        </header>
+        <main>
+            <h2 class="big-title">Bienvenue dans le Parc des Pyrénnées</h2>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta fugit perferendis fuga dolor minus cupiditate corporis mollitia odit, tempore quis voluptatibus quisquam impedit ducimus illo distinctio laudantium omnis, numquam dolorum commodi reiciendis dignissimos quaerat voluptatum error est. Dolores exercitationem error libero autem perspiciatis odio voluptatum illum debitis eaque deserunt, non mollitia voluptates repellendus nisi dignissimos totam nesciunt recusandae impedit ipsum eveniet distinctio vitae consectetur doloremque? Aut architecto porro maxime voluptatem magni quidem ab velit eaque inventore distinctio mollitia tempore non neque animi rerum quam qui, officia laudantium! Voluptate est doloremque eum autem numquam cum laborum perferendis. Laboriosam nulla fuga magni aperiam doloribus vero obcaecati quas, inventore omnis iusto qui tempore provident. Eaque mollitia ipsam repellendus perferendis minima eius nam non ipsa dolorum repellat, consequatur iste itaque facilis sit amet veritatis sint! Molestiae temporibus magni maxime veritatis, vero, quasi minus deserunt modi mollitia maiores ducimus eligendi ratione? Magnam commodi repellat debitis consequuntur quasi quia magni cupiditate sed repudiandae, unde odit vitae harum culpa maxime perferendis ea minima optio vel. Asperiores architecto quod esse quidem quae explicabo voluptatibus ut, repudiandae sit reprehenderit fuga ipsa quam aut illum, pariatur dolorem cum voluptatem facilis a vel magnam quos omnis blanditiis quis. Incidunt, provident alias?
+            </p>
+            <h2>La météo :</h2>
+            <div class="meteo">
+                <img class="box-meteo"src="./Images/box-meteo.png" alt="Météo">
+            </div>
+
+            <h2>Nos chemins de randonnée :</h2>
+            <div class="list-article2">
+                <article class="path">
+                    <div>
+                        <h3 class="title-article">Le Lac Enchanté</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam, qui quasi quia commodi hic laborum facilis magni natus molestias earum!</p>
+                        <button type="button" href="#">En Savoir Plus!</button>
+                    </div>
+                    <img src="./Images/boat-1920.jpg" alt="Boat">
+                </article>
+                <article class="path">
+                    <div>
+                        <h3 class="title-article">Le GR 5</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores earum laborum a sed deserunt ad voluptatem dolore debitis incidunt commodi!</p>
+                        <button type="button" href="#">En Savoir Plus!</button>
+                    </div>
+                    <img src="./Images/mountain-1920.jpg" alt="Boat">
+                </article>
+                <article class="path">
+                    <div>
+                        <h3 class="title-article">Le Sentier des Connaisseurs</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni animi fugiat accusantium deserunt repellendus voluptatum ad quidem tempore sint temporibus.</p>
+                        <button type="button" href="#">En Savoir Plus!</button>
+                    </div>
+                    <img src="./Images/lake-1920.jpg" alt="Boat">
+                </article>
+                <article class="path">
+                    <div>
+                        <h3 class="title-article">Le Chemin de L'absolution</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi architecto explicabo sit sunt quaerat vitae provident inventore cum quasi id?</p>
+                        <button type="button" href="#">En Savoir Plus!</button>
+                    </div>
+                    <img src="./Images/sunset-1920.jpg" alt="Boat">
+                </article>
+            </div>
+
+            <h2>Notre Flore :</h2>
+            <div class="list-article">
+                <article class="flore">
+                    <h3 class="title-article">Fleur Rouge</h3>
+                    <img src="./Images/bouquetin.jpg" alt="Bouquetin" class="img-article">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <button type="button" href="#">En Savoir Plus!</button>
+                </article>
+                <article class="flore">
+                    <h3 class="title-article">Sapins</h3>
+                    <img src="./Images/loup.jpg" alt="Loup" class="img-article">
+                    <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                    <button type="button" href="#">En Savoir Plus!</button>
+                </article>
+                <article class="flore">
+                    <h3 class="title-article">Herbes</h3>
+                    <img src="./Images/ours.jpg" alt="Ours" class="img-article">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <button type="button" href="#">En Savoir Plus!</button>
+                </article>
+            </div>
+
+            <h2>Notre Faune :</h2>
+            <div class="list-article">
+                <article class="faune">
+                    <h3 class="title-article">Bouquetin des Pyrénnées</h3>
+                    <img src="./Images/bouquetin.jpg" alt="Bouquetin" class="img-article">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <button type="button" href="#">En Savoir Plus!</button>
+                </article>
+                <article class="faune">
+                    <h3 class="title-article">Loups des Pyrénnées</h3>
+                    <img src="./Images/loup.jpg" alt="Loup" class="img-article">
+                    <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                    <button type="button" href="#">En Savoir Plus!</button>
+                </article>
+                <article class="faune">
+                    <h3 class="title-article">Ours des Pyrénnées</h3>
+                    <img src="./Images/ours.jpg" alt="Ours" class="img-article">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <button type="button" href="#">En Savoir Plus !</button>
+                </article>
+            </div>
+        </main>
+        <footer>
+            <div>
+                <a href="#">CGU</a>
+                <a href="#">Mentions Légales</a>
+            </div>
+            <div>
+                <h3>Contactez-nous</h3>
+                <a href="mailto:xyz@hotmail.com"> <img src="./Images/mail.png" alt="mail"> Envoyez-nous un email </a>
+                <p>Parc Internationnal du Monde Libre<br> Pentagone <br> 2 chemin de Lanus <br> BP 666 <br> 31200 Pyrénée CEDEX </p>
+            </div>
+            <div>
+                <h3>Suivez-nous</h3>
+                <a href="https://www.facebook.com/?locale=fr_FR"><img src="./Images/facebook.png" alt="facebook"></a>
+                <a href="https://www.instagram.com/"><img src="./Images/instagram.png" alt="instagram"></a>
+            </div>
+        </footer>
+    </body>
+</html>

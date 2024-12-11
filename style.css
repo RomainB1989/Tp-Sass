@@ -1,0 +1,241 @@
+@charset "UTF-8";
+/* Mes Imports */
+/*  Color Palett  */
+/* Font family */
+/* Variables Antony */
+/* Mixins */
+/* Mixins Yannick */
+/* Mixins Romain */
+/* Extend */
+body main .meteo .box-meteo, body main .list-article2 .path, body main .list-article .faune, body main .list-article .flore {
+  box-shadow: 5px 10px 25px -5px rgb(66, 68, 90);
+}
+
+body footer div h3, body main h2, body main .big-title, body main .list-article2 .path div .title-article, body main .list-article .faune .title-article, body main .list-article .flore .title-article {
+  text-shadow: 5px 3px 4px #586641;
+}
+
+body main .list-article2 .path div button, body main .list-article .faune button, body main .list-article .flore button {
+  border: 3px solid #014421;
+  border-radius: 10px;
+  display: flex;
+  align-self: center;
+  color: #014421;
+  background-color: #A28671;
+}
+
+body main .list-article .faune, body main .list-article .flore {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid #A28671;
+  border-radius: 10px;
+  margin: 0px 10px;
+  padding: 10px;
+  text-align: center;
+}
+body main .list-article .faune .title-article, body main .list-article .flore .title-article {
+  color: #014421;
+  font-family: Prosto One;
+}
+body main .list-article .faune img, body main .list-article .flore img {
+  height: 50px;
+  width: auto;
+}
+body main .list-article .faune p, body main .list-article .flore p {
+  -webkit-text-decoration: solid;
+          text-decoration: solid;
+  color: #393d47;
+  font-family: Gabarito;
+  padding: 0px 10px;
+}
+body main .list-article .faune button:hover, body main .list-article .flore button:hover {
+  color: #393d47;
+  border: 3px solid #393d47;
+  border-radius: 10px;
+  transform: scale(1.2);
+}
+
+body main .list-article2 .path {
+  display: flex;
+  flex-direction: row;
+  border: 2px solid #A28671;
+  border-radius: 10px;
+  margin: 10px 0px;
+  padding: 10px;
+  text-align: center;
+}
+body main .list-article2 .path div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+body main .list-article2 .path div .title-article {
+  color: #014421;
+  font-family: Prosto One;
+}
+body main .list-article2 .path div p {
+  -webkit-text-decoration: solid;
+          text-decoration: solid;
+  color: #393d47;
+  font-family: Gabarito;
+  padding: 0px 10px;
+}
+body main .list-article2 .path div button:hover {
+  color: #393d47;
+  border: 3px solid #393d47;
+  border-radius: 10px;
+  transform: scale(1.2);
+}
+body main .list-article2 .path img {
+  width: 400px;
+  height: auto;
+}
+
+/* Partition du Css Indenté */
+body {
+  margin: 0;
+  padding: 0;
+}
+body header {
+  box-shadow: 0px 10px 10px #014421;
+}
+body header div {
+  /*border-bottom: solid $forest-green;*/
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body header input {
+  background-color: #A28671;
+  border: solid #014421;
+  color: #ffffff;
+  border-radius: 5px;
+  width: 150px;
+  height: 50px;
+}
+body header #search-bar {
+  width: 200px;
+  height: 50px;
+  border: solid #014421;
+  background: #ffffff;
+  border-radius: 5px;
+}
+body main {
+  width: 80%;
+  margin: auto;
+}
+body main p {
+  color: #393d47;
+  font-family: Gabarito;
+  margin-bottom: 100px;
+}
+body main .big-title {
+  font-size: 2em;
+  font-family: Prosto One;
+}
+body main h2 {
+  text-align: center;
+  color: #014421;
+  font-family: Prosto One;
+}
+body main .meteo {
+  margin: 30px 0px;
+  margin-bottom: 100px;
+  display: flex;
+  align-self: center;
+}
+body main .meteo .box-meteo {
+  border: 2px solid white;
+  border-radius: 10px;
+  margin: auto;
+}
+body main .list-article2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+  margin: 30px 0px;
+  margin-bottom: 100px;
+}
+body main .list-article2 .path {
+  margin: 10px 10px;
+}
+body main .list-article {
+  margin-bottom: 100px;
+  display: flex;
+  flex-direction: row;
+}
+body main .list-article .flore {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 10px;
+  margin: 10px 10px;
+}
+body main .list-article .faune {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 10px;
+  margin: 10px 10px;
+}
+body footer {
+  background-image: linear-gradient(white, #A28671);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+body footer div h3 {
+  font-family: Prosto One;
+  color: #014421;
+}
+body footer div p {
+  font-family: Gabarito;
+  color: #393d47;
+}
+body footer div a {
+  margin-left: 50px;
+  color: black;
+  font-family: Gabarito;
+  text-decoration: none;
+}
+body footer div a:hover {
+  text-decoration: underline;
+  color: white;
+  transform: scale(1.2);
+}
+body footer div:first-child {
+  display: flex;
+  align-items: center;
+}
+body footer div:nth-child(2) {
+  width: 50%;
+  border-left: solid 2px #014421;
+  border-right: solid 2px #014421;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+body footer div:nth-child(2) a {
+  align-self: center;
+  background-color: #014421;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+#truc {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu_cache {
+  display: none;
+}
+
+.menu_affiche:hover + .menu_cache {
+  display: flex;
+  position: absolute;
+  top: 110px;
+  left: 110px;
+}/*# sourceMappingURL=style.css.map */
